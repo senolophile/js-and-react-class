@@ -100,6 +100,62 @@ else {
 
 
 
+let marks=67;
+if(marks>40){
+    console.log("He got A+")
+}
+else if(marks>60 && marks<90){
+    console.log("He got A")
+}
+else{
+    console.log("He got B")
+}
+else{
+    console.log("He got C")
+}
+else{
+    console.log("He failed the exam ")
+
+}
+}
+}
+}}
+
+//q4:using the if else if statement,calculate the electricity bill based on units consumed.
+//conditions:
+//up to 50 units=rs 3 per unit
+//51-150 unit =rs 5 per unit
+// Above 150 units=rs 8 per unit 
+
+
+import java.util.Scanner;
+
+public class ElectricityBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter units consumed: ");
+        int units = sc.nextInt();
+        double bill;
+
+        if (units <= 50) {
+            bill = units * 3;
+        }
+        else if (units <= 150) {
+            bill = units * 5;
+        }
+        else {
+            bill = units * 8;
+        }
+
+        System.out.println("Total Electricity Bill = Rs. " + bill);
+
+        sc.close();
+    }
+}
+
+
+
 
 
 
