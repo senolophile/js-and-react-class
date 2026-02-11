@@ -43,7 +43,7 @@ let a=20
 let b=30
 
 // if statement
-if(a+b)
+if(a>b){
     console.log(a+"is Greater")
 }
 else{
