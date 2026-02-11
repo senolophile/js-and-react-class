@@ -38,5 +38,17 @@
 // c+=1
 // //console.log("second:",c)
 
+//day3:Condition statement in javascript
+let a=20
+let b=30
+
+// if statement
+if(a+b)
+    console.log(a+"is Greater")
+}
+else{
+    console.log(b+"is Greater")
+}   
+
 
 
