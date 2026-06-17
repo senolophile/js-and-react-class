@@ -1,14 +1,42 @@
 // //operators in javascript
 // // arthimetic operator
+
+//let a=10
+//let b=5
+//let diff=a-b
+//let product=a*b
+//let division=a/b
+//let remainder=a%b
+//let exponent=a**b
+//console.log(sum)
+//console.log(diff)
+//console.log(product)
+//console.log(division)
+//console.log(remainder)
+//console.log(exponent)
+
+// 2.Assignment operators
+//let c=20
+//let a=10
+//let b=5
+//let c=15
+
+//console.log(c+=1)
+//console.log(a-=1)
+//console.log(d*=1)
+//console.log(a**=2)
+
+
 // //comparison operators
 // //USED TO COMPARE TWO OR MORE VALUES AND THE RESULT T RETURNED JS ALWAYS BOOLEAN VALUE THAT JS EITHER TRUE OR FALSE
 
-// let a=1
+// let a=9
 // let b=8
 // //console.log(a>b)
 // console.log(a<b)
 // //greater than equals to
 // //console.log(a>=b)
+//console.log(a<=b)
 
 // //== ==
 // // == checks only value but ignores the data types
@@ -25,45 +53,70 @@
 // const fahrenheit=(celsius*(9/5)+32)
 // console.log("The "+celsius+"degree"+" is equal to "+fahrenheit+"fahreinheit")
 
+//declare the input value const celusis=36;
+//perform the calcultion 
+//we use (9/5) or 1.8 to get the ratio right
+const fahrenheit= (celsius*(9/5)+32)
+//display the result
+console.log("The "+celsius+"degree"+" is equal to "+fahrenheit+"fahreinheit")
 
 
 
 
-
-// let c=20
-
-// c=c+1
-// c+=1
-// // console.log("first:",c)
-// c+=1
-// //console.log("second:",c)
-
-//day3:Condition statement in javascript
+//Day3:Conditional statement in javascript
 let a=20
 let b=30
-let c=10
+let c=40
 
 // if statement
 //if(a>b){
-   // console.log("a+is Greater than b")
+   // console.log(a+"is Greater")
 //}
 //else{
-   // console.log("b+is Greater than a")
+   // console.log(b+"is Greater")
 //} 
+//else if
 
-if(a>b) && a>c){
-    console.log("a is greatest")
+if(a>b && a>c){
+        console.log(a+ c"is greater")
 }
 else if(b>c){
-    console.log("b is greatest")
+    console.log(b+"c is greatest")
 }
 else{
-    console.log(")
+    console.log(c +" c is greater")
 }
 
 // Q:Declare four variables w,x,y,z and find largest/greatest among than using if else if condition
 
 //q2:using if else if else statement ,display "your BMI[BMI VALUE] is perfect", your BMI is below average "or" your BMI is above average"
+
+//q3:The user has got marks in one subject let us assume the marks can be from (1 to 100) we need to find the Grade got by student based on his marks 
+// a.if he got 90 or above the grade is A+
+//b. if he got above 80 and below 90 the grade is A
+//c.if he got above 60 and below 80 the grade is B
+//d.else he got C
+// And finally if marks is less than 40 he will be failed 
+//Nested If
+
+let marks=67;
+if(marks>40){
+    if (marks>90){
+        console.log("He got A+")
+    }
+    else if(marks>80 && marks<90){
+        console.log("He got A")
+    }
+    else if(marks>60 && marks<80){
+        console.log("He got B")
+    }
+    else{
+        console.log("He got C")
+    }
+}
+else{
+    console.log("He failed the exam ")
+}
 
 // Declare variables
 let w = 10;
@@ -94,32 +147,7 @@ if (bmi >= 18.5 && bmi <= 24.9) {
 else if (bmi < 18.5) {
     console.log("Your BMI", bmi, "is below average");
 }
-else {
-    console.log("Your BMI", bmi, "is above average");
-}
-
-
-
-let marks=67;
-if(marks>40){
-    console.log("He got A+")
-}
-else if(marks>60 && marks<90){
-    console.log("He got A")
-}
-else{
-    console.log("He got B")
-}
-else{
-    console.log("He got C")
-}
-else{
-    console.log("He failed the exam ")
-
-}
-}
-}
-}}
+else 
 
 //q4:using the if else if statement,calculate the electricity bill based on units consumed.
 //conditions:
@@ -153,6 +181,59 @@ public class ElectricityBill {
         sc.close();
     }
 }
+
+//Day4: // function 
+//A block of code that can be reuse multiples times
+// parameter based function and without parameter 
+//function sum(){
+// let a=10;
+// let b=20;
+// console.log(a+b)
+//return a+b;
+//}
+// sum(); // if you use console.log or directly prints inside function 
+// console.log(sum())
+// console.log(sum())
+//console.log(sum())
+//sum()
+//sum()
+
+// parameter based function 
+//function mul(x,y){
+// return x*y
+//}
+// console.log(mul(2,3))
+//console.log(mul(12,12))
+
+//function multiply(){
+//local variable
+// let a=10
+// a*=2
+// console.log("local variable",a)
+//}
+//multiply()
+//console.log(a)
+
+//q1. check whether the number is even or odd using function and conditional statement
+// Arrow function modern function syntax
+// const evenOdd=(a)=>{
+    //if (a%2==0){
+    console.log("Even number")
+    //}
+    //else{
+        console.log("Odd number")
+    //}
+    //}
+    //evenOdd(12)
+    
+// Loop in javascript 
+//1.For Loop
+for(let i=0;i<5;i++){
+    console.log(i)
+}
+
+
+//
 
 
 
